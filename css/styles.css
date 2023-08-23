@@ -1,0 +1,245 @@
+/*Variables*/
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --corn-flower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-overlay: rgba(46, 47, 66, 40);
+  --grey: rgba(46, 47, 66, 70);
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+}
+
+/*Root styles*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: var(--slate);
+  background-color: var(--white);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--navy-blue);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--ocean);
+}
+
+button {
+  color: var(--white);
+  background-color: var(--iris);
+}
+
+button:hover,
+button:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+}
+
+.list {
+  list-style: none;
+}
+
+/*Logo*/
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--iris);
+  text-transform: uppercase;
+}
+
+.logo-end {
+  color: var(--navy-blue);
+}
+
+/*Header*/
+.navigation-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
+  color: var(--ocean);
+}
+
+.header-address {
+  font-style: normal;
+}
+
+.header-address-item {
+  color: var(--slate);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+address a:hover,
+address a:focus {
+  color: var(--ocean);
+}
+
+/*Sections*/
+
+/*Filters*/
+.filters-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.filters-button {
+  color: var(--iris);
+  background-color: var(--cloud);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+.filters-button:hover,
+.filters-button:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+}
+
+/*Projects*/
+.project-header {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.section-hero {
+  background-color: var(--navy-blue);
+}
+
+/*Hero*/
+.hero-header {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.hero-button {
+  background-color: var(--iris);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--ocean);
+}
+
+/*Features*/
+.features-item-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.features-item-description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+/*Areas*/
+.areas-header {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+}
+
+/*Team*/
+.section-team {
+  background-color: var(--cloud);
+}
+
+.team-header {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+}
+
+.team-list-item {
+  background-color: var(--white);
+}
+
+.team-list-item-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.team-list-item-description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+/*Footer*/
+.page-footer {
+  background-color: var(--navy-blue);
+  color: var(--cloud);
+}
+
+.page-footer .logo {
+  color: var(--iris);
+}
+
+.page-footer .logo .logo-end {
+  color: var(--cloud);
+}
+
+.footer-description {
+  line-height: 1.5;
+  color: var(--cloud);
+  letter-spacing: 0.02em;
+}
