@@ -221,7 +221,6 @@ address a:focus {
 
 .project-cards-item {
   width: calc((100% - 2 * 24px) / 3);
-  border: 1px solid var(--corn-flower);
 }
 
 .project-header {
@@ -243,6 +242,7 @@ address a:focus {
 .project-info {
   padding: 32px 16px;
   border: 1px solid var(--corn-flower);
+  border-top: none;
 }
 
 /*Hero*/
