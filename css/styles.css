@@ -119,6 +119,7 @@ img {
   display: flex;
   flex-direction: row;
   margin-right: auto;
+  align-items: center;
 }
 
 .header-logo {
@@ -208,6 +209,7 @@ address a:focus {
 .filters-button:focus {
   color: var(--white);
   background-color: var(--ocean);
+  border: 1px solid transparent;
 }
 
 .project-cards {
@@ -228,6 +230,7 @@ address a:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  margin-bottom: 8px
 }
 
 .project-description {
@@ -239,9 +242,7 @@ address a:focus {
 
 .project-info {
   padding: 32px 16px;
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
+  border: 1px solid var(--corn-flower);
 }
 
 /*Hero*/
@@ -256,7 +257,7 @@ address a:focus {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white);
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto 48px;
 }
 
@@ -272,6 +273,9 @@ address a:focus {
   display: block;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .hero-button:hover,
@@ -290,11 +294,7 @@ address a:focus {
 }
 
 .feature-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  flex-basis: 264px;
-  flex-direction: column;
+  width: 264px;
 }
 
 .features-item-header {
@@ -303,6 +303,7 @@ address a:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  margin-bottom: 8px;
 }
 
 .features-item-description {
@@ -358,10 +359,8 @@ address a:focus {
 }
 
 .team-list-item {
-  flex-basis: 264px;
+  width: 264px;
   background-color: var(--white);
-  display: flex;
-  flex-direction: column;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -372,6 +371,8 @@ address a:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  text-align: center;
+  margin-bottom: 8px
 }
 
 .team-list-item-description {
@@ -379,6 +380,7 @@ address a:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  text-align: center;
 }
 
 .list-team-item-info {
@@ -391,12 +393,6 @@ address a:focus {
 }
 
 /*Footer*/
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .page-footer {
   background-color: var(--navy-blue);
   color: var(--cloud);
@@ -405,6 +401,8 @@ address a:focus {
 
 .page-footer .logo {
   color: var(--iris);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .page-footer .logo .logo-end {
