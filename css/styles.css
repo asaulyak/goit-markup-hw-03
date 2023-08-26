@@ -24,6 +24,38 @@ body {
   background-color: var(--white);
 }
 
+/*Reset start*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*Reset end*/
+
+/*Base styles*/
+.container {
+  max-width: 1128px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .link {
   text-decoration: none;
   color: var(--navy-blue);
@@ -34,19 +66,26 @@ body {
   color: var(--ocean);
 }
 
-button {
-  color: var(--white);
-  background-color: var(--iris);
-}
-
-button:hover,
-button:focus {
-  color: var(--white);
-  background-color: var(--ocean);
+.button {
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .list {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*Logo*/
@@ -65,12 +104,38 @@ button:focus {
 }
 
 /*Header*/
+
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navigation-top {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+
+.header-logo {
+  margin-right: 76px;
+  padding: 24px 0;
+  display: block;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
 .navigation-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  padding: 24px 0;
+  display: block;
 }
 
 .navigation-item:hover,
@@ -82,10 +147,18 @@ button:focus {
   font-style: normal;
 }
 
+.address-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
 .header-address-item {
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 
 address a:hover,
@@ -136,28 +209,37 @@ address a:focus {
   color: var(--slate);
 }
 
+/*Hero*/
+.hero-container {
+  padding: 188px 0;
+}
+
 .section-hero {
   background-color: var(--navy-blue);
 }
 
-/*Hero*/
 .hero-header {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white);
+  width: 496px;
+  margin: 0 auto 48px;
 }
 
 .hero-button {
   background-color: var(--iris);
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
-  cursor: pointer;
+  padding: 16px 32px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
@@ -166,6 +248,23 @@ address a:focus {
 }
 
 /*Features*/
+.features-container {
+  padding: 120px 0;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-basis: 264px;
+  flex-direction: column;
+}
+
 .features-item-header {
   font-weight: 500;
   font-size: 20px;
@@ -182,6 +281,10 @@ address a:focus {
 }
 
 /*Areas*/
+.areas-container {
+  padding-bottom: 120px;
+}
+
 .areas-header {
   font-size: 36px;
   line-height: 1.11;
@@ -189,9 +292,23 @@ address a:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
+  margin-bottom: 72px;
+}
+
+.areas-list {
+  display: flex;
+  gap: 24px;
+}
+
+.areas-list-item {
+  flex-basis: 360px;
 }
 
 /*Team*/
+.team-container {
+  padding: 120px 0;
+}
+
 .section-team {
   background-color: var(--cloud);
 }
@@ -203,10 +320,23 @@ address a:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-list-item {
+  flex-basis: 264px;
   background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 32px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-list-item-header {
@@ -224,10 +354,25 @@ address a:focus {
   color: var(--slate);
 }
 
+.list-team-item-info {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /*Footer*/
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .page-footer {
   background-color: var(--navy-blue);
   color: var(--cloud);
+  padding: 100px 0;
 }
 
 .page-footer .logo {
@@ -242,4 +387,5 @@ address a:focus {
   line-height: 1.5;
   color: var(--cloud);
   letter-spacing: 0.02em;
+  width: 264px;
 }
